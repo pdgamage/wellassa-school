@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+
+.main{
+   width:100%;
+   background-image: url("background3.jpg");
+   background-position: center;
+   background-size: cover;
+   height:100%;
+   background-repeat: no-repeat;
+   position:relative;
+}
+
+.container{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   padding-bottom: 60px;
+}
+
+.container .content{
+   text-align: center;
+}
+
+.container .content h3{
+   font-size: 30px;
+   color:#333;
+}
+
+.container .content h3 span{
+   background: crimson;
+   color:#fff;
+   border-radius: 5px;
+   padding:0 15px;
+}
+
+.container .content h1{
+   font-size: 50px;
+   color:#333;
+}
+
+.container .content h1 span{
+   color:crimson;
+}
+
+.container .content p{
+   font-size: 25px;
+   margin-bottom: 20px;
+}
+
+.container .content .btn{
+   display: inline-block;
+   padding:10px 30px;
+   font-size: 20px;
+   background: #333;
+   color:#fff;
+   margin:0 5px;
+   text-transform: capitalize;
+}
+
+.container .content .btn:hover{
+   background: crimson;
+}
+/*** Navbar ***/
+.navbar .dropdown-toggle::after {
+   border: none;
+   content: "\f107";
+   font-family: "Font Awesome 5 Free";
+   font-weight: 900;
+   vertical-align: middle;
+   margin-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+   margin-right: 30px;
+   padding: 25px 0;
+   color: #FFFFFF;
+   font-size: 15px;
+   text-transform: uppercase;
+   outline: none;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+   color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+   .navbar-light .navbar-nav .nav-link  {
+       margin-right: 0;
+       padding: 10px 0;
+   }
+
+   .navbar-light .navbar-nav {
+       border-top: 1px solid #EEEEEE;
+   }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+   height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+   color: var(--dark);
+   font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+   top: -100px;
+   transition: .5s;
+}
+
+@media (min-width: 992px) {
+   .navbar .nav-item .dropdown-menu {
+       display: block;
+       margin-top: 0;
+       opacity: 0;
+       visibility: hidden;
+       transition: .5s;
+   }
+
+   .navbar .dropdown-menu.fade-down {
+       top: 100%;
+       transform: rotateX(-75deg);
+       transform-origin: 0% 0%;
+   }
+
+   .navbar .nav-item:hover .dropdown-menu {
+       top: 100%;
+       transform: rotateX(0deg);
+       visibility: visible;
+       transition: .5s;
+       opacity: 1;
+   }
+}
+.video-container {
+   position:absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 60%;
+   overflow: hidden;
+   z-index: -1;
+   object-fit: cover;
+ 
+}
+
+/* Apply a semi-transparent overlay on the video */
+.video-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.753); /* Adjust the opacity (alpha value) here */
+}
+
+/* Style the content on top of the video */
+.content {
+   position: relative;
+   z-index: 1;
+   text-align: center;
+   padding: 50px;
+   color: #ffffff;
+}
+.content h1{
+   font-family: sans-serif;
+   padding-top: 10%;
+   font-size: 40px;
+}
+@media (min-aspect-ratio:16/9){
+   .background-clip{
+       width: 100%;
+       height: 100%;
+   }
+}
+@media (max-aspect-ratio:16/9){
+   .background-clip{
+       width: auto;
+       height: 100%;
+   }
+}
+
+.form-container{
+   min-height: 100vh;
+   display: flex;
+   justify-content:right;
+   padding:20px;
+   padding-bottom: 100px;
+   
+}
+
+.form-container form{
+   padding:20px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+   background: #cac7c791;
+   text-align: center;
+   width: 500px;
+}
+.form-container h1{
+   padding-right: 250px;
+   padding-top: 150px;
+}
+
+.form-container form h3{
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color:#333;
+}
+
+.form-container form input,
+.form-container form select{
+   width: 100%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 0;
+   background: #eee;
+   border-radius: 5px;
+}
+
+.form-container form select option{
+   background: #fff;
+}
+
+.form-container form .form-btn{
+   background: #1b415ab7;
+   color:rgb(255, 255, 255);
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+   background: rgb(33, 30, 48);
+   color:#fff;
+}
+
+.form-container form p{
+   margin-top: 10px;
+   font-size: 20px;
+   color:#333;
+}
+
+.form-container form p a{
+   color:rgb(107, 97, 99);
+}
+
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: rgba(97, 91, 92, 0.678);
+   color:#fff;
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}

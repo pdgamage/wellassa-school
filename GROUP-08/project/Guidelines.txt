@@ -1,0 +1,16 @@
+* Install xampp software.
+
+* start apache server and MySQL server from XAMPP Control panel.
+
+* Click MySQL Server 'Admin' button in XAMPP Control panel.
+
+* Create database ('user_db') .
+
+* Create 'user_form' table in the database.
+
+* Create these columns in the table (id[primary,auto increment] int(255),name varchar(255),email varchar(255),phonenum bigint(20),password varchar(255),user_type varchar(255)[default-user]).
+
+* Copy the GROUP-08 Folder and paste to 'C:\xampp\htdocs' location.
+
+* Open web browser and type 'http://localhost/GROUP-08/project/'.
+
